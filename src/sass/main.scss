@@ -34,9 +34,9 @@ body {
   background-color: var(--white-color);
   color: var(--text-color);
   font-family: var(--primary-font-stack);
-
-  /* Typography */
 }
+
+/* Typography */
 .products-title,
 .news-section {
   font-family: var(--title-font-stack);
@@ -626,7 +626,7 @@ img {
   height: 50px;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: var(--title-color-font);
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   border: 1px solid var(--white-color);
   font-family: var(--primary-font-stack);
