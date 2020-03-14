@@ -1,0 +1,138 @@
+.about {
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-basis: calc(100% / 4 - 21.75px);
+  padding: 0;
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-right: 29px;
+  }
+}
+
+.about__title {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.77;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: $color-title-font;
+}
+
+.about__text {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 300;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.about__link {
+  all: unset;
+  cursor: pointer;
+}
+
+.about__icon--sett,
+.about__icon--world,
+.about__icon--compass {
+  display: block;
+  width: 66px;
+  height: 66px;
+  background-size: contain;
+  margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  animation-name: infiniteround;
+  animation-duration: 6000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  fill: $color-accent;
+}
+
+.about__icon--sett:hover,
+.about__icon--sett:focus {
+  border-radius: 10px;
+  background-color: $color-description;
+  transition: $animation-time $timing-fn;
+}
+
+.about__icon--sett:active {
+  background-color: $color-active;
+}
+
+.about__icon--world:hover,
+.about__icon--world:focus {
+  border-radius: 50px;
+  background-color: $color-description;
+  transition: $animation-time $timing-fn;
+}
+
+.about__icon--world:active {
+  background-color: $color-active;
+}
+
+.about__icon--compass,
+.about__icon--money {
+  display: block;
+  width: 66px;
+  height: 66px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  animation-name: infinite;
+  animation-duration: 6000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  fill: $color-accent;
+}
+
+.about__icon--compass:hover,
+.about__icon--compass:focus {
+  border-radius: 10px;
+  background-color: $color-description;
+  transition: $animation-time $timing-fn;
+}
+
+.about__icon--compass:active {
+  background-color: $color-active;
+}
+
+.about__icon--money:hover,
+.about__icon--money:focus {
+  border-radius: 10px;
+  background-color: $color-description;
+  transition: $animation-time $timing-fn;
+}
+
+.about__icon--money:active {
+  background-color: $color-active;
+}

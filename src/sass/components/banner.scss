@@ -1,0 +1,86 @@
+.banner {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-text;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/Banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.banner__title {
+  text-transform: uppercase;
+  font-family: $font-secondary-stack;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  color: $color-primary-white;
+  margin: 0;
+  padding: 0;
+  animation-name: round;
+  animation-duration: 750ms;
+  animation-timing-function: $timing-fn;
+  animation-delay: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.symbol {
+  font-family: $font-secondary-stack;
+  font-weight: 700;
+  color: $color-accent;
+}
+
+.banner__subtitle {
+  text-transform: uppercase;
+  font-family: $font-primary-stack;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  color: $color-primary-white;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  animation-name: round;
+  animation-duration: 850ms;
+  animation-timing-function: $timing-fn;
+  animation-delay: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.sale {
+  font-weight: 600;
+  color: $color-accent;
+}
+
+.banner__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-secondary-stack;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $color-primary-white;
+  background-color: $color-accent;
+  text-transform: uppercase;
+  min-width: 120px;
+  height: 43px;
+  padding: 16px 30px;
+  text-decoration: none;
+  border: 1px solid $color-accent;
+  margin: 0 auto;
+  transform: scale(1);
+
+  &:hover,
+  &:hover {
+    color: $color-accent;
+    background-color: $color-primary-white;
+    transform: scale(1.2);
+    transition: $animation-time $timing-fn;
+  }
+}

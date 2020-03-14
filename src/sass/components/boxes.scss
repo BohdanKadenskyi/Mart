@@ -1,0 +1,20 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.collection {
+  background-color: $color-secondary-white;
+  min-height: 677px;
+}
+
+.featured {
+  min-height: 1035px;
+}
+
+.news {
+  min-height: 850px;
+  background-color: $color-secondary-white;
+}

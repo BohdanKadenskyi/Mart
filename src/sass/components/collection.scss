@@ -1,0 +1,63 @@
+.collection-title {
+  font-family: $font-primary-stack;
+  font-size: 48px;
+  line-height: 0.6666;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.collection-title::after {
+  content: '';
+  display: flex;
+  width: 100%;
+  height: 15px;
+  background-image: url('../images/collecttion/line.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 31px;
+}
+
+.collection-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.collection-products__item {
+  position: relative;
+  list-style: none;
+  font-family: $font-secondary-stack;
+  font-size: 18px;
+  line-height: 1.77;
+  font-weight: 900;
+  margin-right: 30px;
+  flex-basis: calc(100% / 4 - 22.5px);
+  flex-grow: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover .card__overlay::before {
+    transform: translateY(0);
+  }
+
+  &:hover .action {
+    opacity: 1;
+  }
+
+  &:hover .card__meta {
+    background-color: $color-accent;
+    transition: $animation-time $timing-fn;
+  }
+
+  &:hover .card__price {
+    background-color: #7fd9c7;
+    transition: $animation-time $timing-fn;
+  }
+}

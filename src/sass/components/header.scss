@@ -1,0 +1,11 @@
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  background-color: $color-accent;
+}
+
+.mastheader {
+  min-height: 42px;
+}

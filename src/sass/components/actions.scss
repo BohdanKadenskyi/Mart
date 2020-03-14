@@ -1,0 +1,134 @@
+.action__button--add {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  border: 1px solid $color-primary-white;
+  font-family: $font-primary-stack;
+  font-size: 14px;
+  line-height: 2.28;
+  color: $color-primary-white;
+  cursor: pointer;
+}
+
+.action__button--cart {
+  display: block;
+  width: 28px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 18px;
+  fill: $color-primary-white;
+}
+
+.action__button--add:hover,
+.action__button--add:focus {
+  background-color: $color-accent;
+  transition: $animation-time $timing-fn;
+}
+
+.action__button--add:active {
+  background-color: $color-active;
+}
+
+.action__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.action__item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid $color-primary-white;
+  cursor: pointer;
+  flex-basis: calc(100% / 3 - 4px);
+  flex-grow: 0;
+  margin-bottom: 8px;
+}
+
+.action__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.action__item:hover,
+.action__item:focus {
+  background-color: $color-accent;
+  transition: $animation-time $timing-fn;
+}
+
+.action__item:active {
+  background-color: $color-active;
+}
+
+.action__button--heart {
+  display: block;
+  width: 26px;
+  height: 23px;
+  background-image: url('../image/icon/heart.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  fill: $color-primary-white;
+}
+
+.action__button--arrows {
+  display: block;
+  width: 26px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  fill: $color-primary-white;
+}
+
+.action__button {
+  all: unset;
+}
+
+.action__button--clock {
+  display: block;
+  width: 24px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  fill: $color-primary-white;
+}
+
+.action {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: opacity;
+  transition-delay: 250ms;
+}

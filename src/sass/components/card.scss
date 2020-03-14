@@ -1,0 +1,60 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  max-height: 322px;
+}
+
+.card__meta {
+  display: inline-block;
+  background-color: $color-description;
+  color: $color-primary-white;
+  text-align: center;
+  height: 40px;
+  width: 201px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.card__price {
+  display: inline-block;
+  background-color: $color-price;
+  color: $color-primary-white;
+  align-items: center;
+  height: 40px;
+  width: 54px;
+  padding: 5px;
+}
+
+.card__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .card__overlay::before {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  content: '';
+  width: calc(255px - 20px);
+  height: calc(282px - 20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(120%);
+  transition: transform 250ms;
+}
+
+.card__text {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $color-description;
+  color: $color-primary-white;
+  text-align: center;
+}
+
+.card__img .products-img {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+}
