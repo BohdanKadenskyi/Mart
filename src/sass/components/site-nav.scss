@@ -18,6 +18,20 @@
   padding: 0;
 }
 
+.contacts__item {
+  &:hover .contacts__link--picon,
+  &:focus .contacts__link--picon {
+    fill: $color-primary-font;
+    transition: $animation-time $timing-fn;
+  }
+
+  &:hover .contacts__link--eicon,
+  &:focus .contacts__link--eicon {
+    fill: $color-primary-font;
+    transition: $animation-time $timing-fn;
+  }
+}
+
 .contacts__link,
 .register__link {
   display: flex;
@@ -34,7 +48,6 @@
 .contacts__link {
   &:hover,
   &:focus {
-    fill: $color-primary-font;
     color: $color-primary-font;
     transition: $animation-time $timing-fn;
   }
@@ -101,11 +114,6 @@
   fill: var(--white-color);
 }
 
-.contacts__link--picon:hover,
-.contacts__link--picon:focus {
-  fill: $color-primary-font;
-}
-
 .email {
   display: flex;
   justify-content: center;
@@ -125,11 +133,6 @@
   margin-right: 6px;
   background-size: contain;
   fill: $color-primary-white;
-}
-
-.contacts__link--eicon:hover,
-.contacts__link--eicon:focus {
-  fill: $color-primary-font;
 }
 
 // NAV-LINK
